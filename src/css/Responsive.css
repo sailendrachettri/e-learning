@@ -1,0 +1,151 @@
+#hamburger{
+    display: none;
+    position: absolute;
+    top: 2%;
+    right: 10%;
+}
+
+#hamburger .line{
+    width: 10px;
+    padding: 3px 20px;
+    margin: 5px;
+    background: #2f3f94;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .intro{
+        font-size: 3rem;
+    }
+    #bg-home{
+        left: 0;
+        top: 30%;
+        width: 100%;
+        opacity: 0.2;
+    }
+
+    #all-course, #all-pricing, #faculty-members{
+        margin: 3% 0;
+    }
+
+    .course-items{
+        width: 36%;
+        margin: 10px;
+    }
+
+    .faculty-members{
+        width: 29%;
+        margin: 10px;
+    }
+
+    #social-media img {
+        width: 40px;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #hamburger{
+        display: block;
+    }
+    .v-class{
+        display: none;
+    }
+
+    #homepage{
+        min-height: auto;
+        margin: 7rem 0;
+    }
+    #homepage div{
+        width: 100%;
+    }
+
+    #first-nav{
+        flex-direction: column;
+    } 
+    #logo{
+        display: inline-block;
+    }
+
+    #login-signup{
+        flex-direction: column;
+        display: block;
+        margin: 0 0 12px 12px;
+    }
+    #login, #signup{
+        display: inline-block;
+    }
+
+    #second-nav{
+        flex-direction: column;
+    }
+    .nav-items{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 8%;
+    }
+    .nav-items li{
+        text-align: start;
+        padding-top: 10px;
+    } 
+
+    #courses{
+        padding: 20% 0;
+    }
+    .course-heading{
+        font-size: 1.5rem;
+    }
+    #courses h2{
+        font-size: 1.5rem;
+    }
+    .course-items{
+        width: 45%;
+        margin: 5px;
+    }
+    .course-items img{
+        width: 50px;
+    }
+    .course-count{
+        padding: 4px 1rem;
+    }
+
+    #all-members{
+        margin: 3% 0;
+    }
+    .faculty-members{
+        width: 40%;
+    }
+
+    .price{
+        width: 60%;
+    }
+
+    #about-company{
+        min-height: 65vh;
+    }
+    #about-left{
+        margin: 6% 0 0 4%;
+    }
+    #about-left h2 {
+        font-size: 2rem;
+    }
+
+    #about-right {
+        position: absolute;
+        opacity: 0.5;
+    }
+
+    #about-right img{
+        width: 100%;
+    }
+
+    #social-media img{
+        width: 35px;
+        margin-right: 1rem;
+        margin-top: 11rem;
+    }
+
+    footer p{
+        font-size: 1.1rem;
+    }
+}

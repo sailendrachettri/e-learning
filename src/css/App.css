@@ -1,0 +1,586 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,italic,500,700,900);
+
+:root{
+    --font-all: 'Roboto', 'cursive';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D4D9DC;
+}
+
+/* FIRST NAVIGATION BAR STARTS FROM HERE */
+#first-nav{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* left navigation item - logo */
+#logo{
+    margin: 10px 10px 10px 2rem;
+}
+
+#logo a{
+    text-decoration: none;
+    color: #021736;
+}
+
+#logo p{
+    font-size: 2rem;
+    padding: 5px;
+    box-shadow: 1px 1px 4px #e8e0e0, -1px -1px 2px #e8e0e0;
+    border-radius: 5px;
+    font-family: var(--font-all);
+    font-weight: 900;
+    color: #021736;
+}
+
+/* right navigation item - login and signup */
+#login-signup{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    font-family: var(--font-all);
+    font-weight: 500;
+    color: #021736;
+}
+
+#signup{
+    margin: 0 1rem;
+}
+
+#signup a{
+    text-decoration: none;
+    color: #021736;
+}
+
+#signup p{
+    font-size: 20px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px #e8e0e0, -1px -1px 2px #e8e0e0;
+}
+
+#login{
+    margin: 0 1rem;
+}
+
+#login a{
+    text-decoration: none;
+    color: #021736;
+}
+
+#login p{
+    font-size: 20px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px #e8e0e0, -1px -1px 2px #e8e0e0;
+}
+/* FIRST NAVIGATION BAR ENDS HERE */
+
+/* SECOND NAVIGATION BAR STARTS FROM HERE*/
+#second-nav{
+    background-color: white;
+    box-shadow: 1px 1px 4px #aba8a8;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    min-height: 15vh;
+    align-items: center;
+}
+
+.nav-items li{
+    list-style-type: none;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-family: var(--font-all);
+    font-weight: 700;
+    color: #021736;
+}
+/* SECOND NAVIGATION BAR ENDS HERE*/
+
+/* HOMEPAGE BODY CONTENT STARTS FROM HERE */
+#homepage{
+    display: flex;
+    margin: 7rem 0 0 0;
+    min-height: 89vh;
+}
+
+#homepage div{
+    width: 49%;
+    margin-left: 9%; 
+}
+
+.intro{
+    font-size: 4rem;
+    color: #0B2956;
+    font-family: var(--font-all);
+    font-weight: 900;
+}
+
+.explore-btn{
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 13%;
+    color: #021736;
+    background-color: white;
+    padding: 5px 14px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 4px #696666;
+    text-align: center;
+    font-family: var(--font-all);
+    text-decoration: none;
+}
+
+.explore-btn:hover{
+    color: #0c3d99;
+}
+
+#bg-home{
+    position: absolute;
+    left: 47%;
+    width: 50%;
+    z-index: -1;
+}
+/* HOMEPAGE BODY CONTENT ENDS HERE */
+
+/* COURSES SECTION STARTS FROM HERE */
+#courses{
+    background-color: white;
+    padding: 10% 0;
+    box-shadow: 1px 1px 4px #aba8a8;
+    margin: 0 0 1rem; /* top left-right bottom*/
+}
+
+.course-heading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--font-all);
+    font-weight: 700;
+    color: #021736;
+}
+
+#courses h2{
+    font-size: 3rem;
+}
+
+#all-course{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 10%;
+    justify-content: center;
+}
+
+.course-items{
+    padding: 1rem 0;
+    border-radius: 5px;
+    width: 20%;
+    margin: 2rem;
+    text-align: center;
+    box-shadow: 1px 1px 4px #b7b0b0, 1px 1px 4px #b7b0b0;
+    transition: transform 1s ease-in-out;
+}
+
+.course-items:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.course-items img{
+    width: 100px;
+}
+
+.course-name{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    font-family: var(--font-all);
+    font-weight: 500;
+    color: #021736;
+}
+
+.course-count{
+    box-shadow: 1px 1px 4px #9e9393;
+    display: inline;
+    background: #d2e0e7;
+    color: #021736;
+    border-radius: 20px;
+    padding: 4px 26px;
+    font-family: var(--font-all);
+}
+/* COURSES SECTION ENDS HERE */
+
+/* FACULTY MEMBERS SECTION STARTS FROM HERE */
+#faculty{
+    background-color: white;
+    padding: 2% 0;
+}
+
+#faculty h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #021736;
+    font-family: var(--font-all);
+    font-weight: 700;
+}
+
+#all-members{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3% 10%;
+}
+
+.faculty-members{
+    width: 20%;
+    box-shadow: 1px 1px 4px #ada8a5;
+    text-align: center;
+    padding: 0 0 2%;
+    margin: 3%;
+    border-radius: 2px;
+}
+
+.faculty-members:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.faculty-members img{
+    width: 100%;
+}
+
+
+.faculty-members p{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    color: #021736;
+    font-family: var(--font-all);
+    font-weight: 500;
+}
+/* FACULTY MEMBERS SECTION ENDS HERE */
+
+/* PLANS AND PRICING SECTION STARTS FROM HERE */
+#pricing{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 1px 4px 4px #aba8a8;
+}
+
+#pricing h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #021736;
+    font-family: var(--font-all);
+    font-weight: 700;
+}
+
+#all-pricing{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3% 10%;
+}
+
+.price{
+    width: 26%;
+    margin: 2%;
+    box-shadow: 1px 1px 4px #a29b9b, -1px -1px 4px #a29b9b;
+    padding: 5px;
+    border-radius: 6px;
+    font-family: var(--font-all);
+}
+
+.price-value{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #043074;
+}
+
+.price-desc{
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    text-align:center;
+    font-weight: 500;
+    color: #021736;
+}
+
+.price-btn{
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px #a29b9b, -1px -1px 4px #a29b9b;
+    background-color: #0B2956;
+    color: white;
+    margin: 10px;
+    font-weight: 500;
+}
+/* PLANS AND PRICING SECTION ENDS HERE */
+
+/* ABOUT THE COMPANY SECTION  STARTS FROM HERE*/
+/* left about the company section */
+#about-company{
+    display: flex;
+    background-color: white;
+    margin: 1% 0;
+}
+
+#about-left{
+    z-index: 2;
+    margin: 10% 0 0 10%;
+}
+
+#about-left h2{
+    font-size: 3rem;
+    font-family: var(--font-all);
+    font-weight: 900;
+    color: #021736;
+}
+
+#about-left p{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-family: var(--font-all);
+    color: #021736;
+    width: 70%;
+}
+
+#social-media{
+    margin: 5% 0;
+}
+
+#social-media a{
+    text-decoration: none;
+}
+
+#social-media img{
+    width: 50px;
+    margin-right: 1.5rem;
+    box-shadow: 2px 2px 4px #7d7070;
+    border-radius: 50px;
+}
+
+#social-media img:hover{
+    transform: scale(1.1, 1.1);   
+}
+
+#about-right img{
+    width: 50vw;
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    #about-right{
+        display: none;
+    }
+}
+/* ABOUT THE COMPANY SECTION  ENDS HERE*/
+
+/* FOOTER SECTION STARTS FROM HERE */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+
+footer p{
+    font-size: 2rem;
+    color: #021736;
+    font-family: var(--font-all);
+    font-weight: 700;
+}
+/* FOOTER SECTION ENDS HERE */
+
+/* LOGIN PAGE SECTION STARTS FROM HERE */
+#login-div{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form{
+    box-shadow: 1px 1px 4px #afafaf;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6px;
+    min-width: 20%;
+}
+
+.inp{
+    padding: 3px 4px;
+    border: none;
+    border-bottom: 1px solid #02173673;
+    margin: 11px 0;
+    background: transparent;
+    font-size: 1.2rem;
+    outline: none;
+    text-align: center;
+}
+
+.div-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgot-p{
+    padding: 10px 0 5px 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #0c3d99;
+    font-family: var(--font-all);
+}
+
+.submit-inp{
+    border-radius: 1rem;
+    border: none;
+    padding: 5px 0;
+    margin: 1.5rem 0 1rem 0;
+    width: 50%;
+    color: #021736;
+    font-family: var(--font-all);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-with-btn{
+    border-radius: 1rem;
+    border: none;
+    padding: 6px;
+    margin: 10px 0;
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+    color: #021736;
+    font-family: var(--font-all);
+    font-weight: 500;
+}
+
+/* LOGIN PAGE SECTION ENDS HERE */
+
+/* SIGNUP PAGE SECTION STARTS FROM HERE */
+#signup-div{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#signup-form{
+    box-shadow: 1px 1px 4px #afafaf;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6px;
+    min-width: 20%;
+}
+
+.inp{
+    padding: 3px 4px;
+    border: none;
+    border-bottom: 1px solid #02173673;
+    margin: 11px 0;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+}
+
+.div-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-inp{
+    border-radius: 1rem;
+    border: none;
+    padding: 5px 0;
+    margin: 1.5rem 0 1rem 0;
+    width: 50%;
+    color: #021736;
+    font-family: var(--font-all);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.signup-with-btn{
+    border-radius: 1rem;
+    border: none;
+    padding: 6px;
+    margin: 10px 0;
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+    color: #021736;
+    font-family: var(--font-all);
+    font-weight: 500;
+}
+/* SIGNUP PAGE SECTION ENDS HERE */
+
+/* CONTACT PAGE SECTION STARTS FROM HERE */
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.contact_form h2{
+    font-size: 2em;
+    margin: 3rem 0;
+    color: #021736;
+}
+
+.contact_form input{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid whitesmoke;
+    margin: 1rem 0;
+    width: 45vw;
+}
+
+.contact_form textarea{
+    width: 22%;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+    width: 45vw;
+    margin: 1rem 0;
+}
+
+.contact_form button{
+    font-size: 1rem;
+    padding: 5px 10px 2px;
+    border: none;
+    border-radius: 10px;
+    color: #021736;
+    font-weight: bold;
+    /* background: black; */
+    margin: 2rem 0 0;
+    box-shadow: 1px 1px 4px #727577;
+    outline: none;
+}
+
+.contact_form button:hover{
+    background-color: rgb(212, 204, 204);
+}
+
+/* CONTACT PAGE SECTION ENDS HERE */
