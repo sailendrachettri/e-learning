@@ -18,3 +18,10 @@ https://i-learn-app.herokuapp.com
 ## Homepage
 
 ![App Screenshot](https://github.com/sailendrachettri/e-learning/blob/main/src/img/versions/i-learn%20app.png)
+## Tech Stack
+
+#### React 
+
+#### Vanilla css
+
+#### JavaScript
